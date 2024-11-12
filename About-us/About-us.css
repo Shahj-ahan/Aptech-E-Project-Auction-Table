@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-item :hover{
+    border-bottom: 4px solid rgb(241, 198, 6);
+    
+}
+.card{
+    width: 250px;
+    height: 450px;
+}
+
+.box{
+    background-color: rgb(255, 230, 0);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 200px;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+}
+.fa-solid{
+    color: rgb(255, 230, 0);
+}
+.icons{
+    margin-top: 5px;
+}
+.container  card{
+    padding-left: 300px;
+}
+.circle{
+    background-color: rgb(255, 230, 0);
+    border: 1px solid white;
+    border-radius: 200px;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* Why choose Section icons */
+
+.col-sm-2{
+    background-color: rgb(255, 230, 0);
+    border-radius: 200px;
+    width: 70px;
+    height: 70px;
+    padding-top: 20px;
+}
+
+.col-sm-4{
+    width: 500px;
+    height: 60px;
+}
+.h2{
+    margin-bottom: 19px;
+}
+
+.Background-img {
+    width: 100%;
+    height: 600px;
+
+}
+.card{
+    margin-top: 90px;
+}
+
+#img-fluid{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.body{
+   
+    border: 1px solid rgb(241, 187, 9);
+    margin-left: 36px;
+    width: 290px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(241, 181, 13);
+}
+
+#Advantage{
+    margin-top: 13%;
+}
+
+@media (max-width:576px) {
+    #Advantage{
+        margin-top: 1800px;
+        
+    }
+    h2{
+        text-align: center;
+    }
+    .h2{
+        text-align: center;
+    }
+    .Background-img{
+        width: 470px;
+        height: 2250px;
+    }
+}
+
+/* footer section*/
+
+.container4{
+    background: #191919;
+    height: 75vh;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.para1{
+    width: 20vw;
+    height: 60vh;
+    margin-top: 3.75rem;
+    
+}
+
+.list{
+    height: 60%;
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 0.625rem;
+    color: #7d8888;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.head2{
+    padding-top: 1.25rem;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    color: rgb(241, 177, 13);
+    
+}
+
+li{
+    cursor: pointer;
+    font-style: oblique;
+    list-style: none;
+    
+}
+
+a{
+    color: #7d8888;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.para2{
+    color: #7d8888;
+    border: 2px solid white;
+    
+}
+
+/* footer end */
+
+@media(min-width:577px) and (max-width:928px){
+    .container4{
+      width: auto;
+      font-size: smaller;
+  }
+
+  .head2{
+      font-size: smaller;
+  }
+  }
+
+
+ 

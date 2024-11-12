@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sell & Buy</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(240, 198, 12);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Section */
+        header .con {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Navbar Section */
+        .navbar-brand img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main Login Section */
+        .login {
+            border: 1px solid grey;
+            border-radius: 30px;
+            width: 500px;
+            background-color: white;
+            margin: 40px auto;
+            padding: 50px;
+        }
+
+        .inp {
+            width: 400px;
+            border: 1px solid gray;
+            border-radius: 50px;
+            padding: 10px;
+            margin-top: -4px;
+        }
+
+        .Sig a{
+           margin-top: 10px;
+           margin-left: 35%;
+        }
+
+        .Sig:hover{
+            color: rgb(65, 64, 61)
+        }
+        .inp:hover {
+            border: 1px solid rgb(233, 173, 9);
+        }
+        
+        /* Footer Section */
+        footer {
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .login {
+                width: 80%;
+                padding: 30px;
+            }
+
+            .Sig {
+                width: 80%;
+                margin: 18px auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .login {
+                width: 90%;
+                padding: 20px;
+            }
+
+            header .con {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .Sig {
+                width: 100%;
+                margin: 18px 0;
+            }
+            .inp{
+                width: 155%;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+
+            footer {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="d-none d-lg-flex con bg-dark p-4">
+            <div class="col-3 text-light">
+                Freephone: +92 3047500633
+            </div>
+            <div class="col-7 text-secondary">
+                <p>Opening Hours: 8am-8pm PST M-Th; 6am-3pm PST Fr</p>
+            </div>
+            <div class="col">
+                <a class="btn btn-warning" href="Sign-in.html" role="button">Sign in</a>
+                <a class="btn btn-warning" href="Register.html" role="button">Register</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navbar Section -->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container">
+          <a class="navbar-brand mx-5" href="#">
+              <img src="log.png" alt="" width="30%">
+          </a>
+          <!-- First Hamburger Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Second Button with Three Dots -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- Custom Three Dots Icon -->
+              <span style="font-size: 24px;">&#x2022;&#x2022;&#x2022;</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end p-3">
+              <div class="text-light">Freephone: +92 3047500633</div>
+              <div class="text-secondary">Opening Hours: 8am-8pm PST M-Th; 6am-3pm PST Fr</div>
+              <a class="btn btn-warning mt-2" href="Sign-in.html" role="button">Sign in</a>
+              <a class="btn btn-warning mt-2" href="Register.html" role="button">Register</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="about-us.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Sell</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Buy</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categories
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="bag.png">404</a></li>
+                          <li><a class="dropdown-item" href="#">Paintings</a></li>
+                          <li><a class="dropdown-item" href="">Electronics</a></li>
+                          <li><a class="dropdown-item" href="#">Buttons</a></li>
+                          <li><a class="dropdown-item" href="#">Forms</a></li>
+                          <li><a class="dropdown-item" href="#">Tabs and accordions</a></li>
+                          <li><a class="dropdown-item" href="#">Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Table</a></li>
+                          <li><a class="dropdown-item" href="#">Grid system</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy policy</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="contact.html">Contacts</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    
+
+    <!-- Main Section -->
+    <div class="login">
+        <label for="text">
+            
+            <div>
+                <p style="font-weight: bold;">Email* </p>
+                <input type="text" placeholder="Enter email" class="inp">
+            </div>
+            <div>
+                <p class="p" style="font-weight: bold;">Password* </p>
+                <input type="password" placeholder="Password" class="inp">
+            </div>
+            <div class="Sig">
+                <a class="btn btn-warning
+                " href="#" role="button">Sign Up</a>
+            </div>
+            
+        </label>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light p-4">
+        <div class="container">
+            <p>&copy; 2024 Sell & Buy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-wn5A8h5kQzobJQyIsvsZ8tdAvIQ49Zw8cVM3VGpWTlWt45W9SXt6drxX0Ne6acM+" crossorigin="anonymous"></script>
+</body>
+</html>
